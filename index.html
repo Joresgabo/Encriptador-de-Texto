@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,1" />
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <img src="./imgs/alura.svg" alt="logoAlura" class="logo">
+    </header>
+    <main>
+        <section>
+            <textarea class="text-area" cols="35" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="icon-text-container">
+                <span class="material-symbols-outlined">
+                    info
+                </span>
+                <h6 class="informacion">
+                    Solo letras minúsculas y sin acentos.
+                </h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <div class="mensaje-container">
+                <div class="mensaje-placeholder"></div>
+                <textarea class="mensaje" cols="20" rows="10"></textarea>
+            </div>
+            <div class="copiarContainer">
+                <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h6>Creado por Jorge Garzón</h6>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
